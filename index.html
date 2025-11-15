@@ -47,30 +47,11 @@
             display: flex;
             justify-content: space-between;
             align-items: center;
-            gap: 2rem;
         }
 
         .logo {
             font-size: 1.25rem;
             font-weight: 600;
-            color: var(--text-primary);
-        }
-
-        .nav-links {
-            display: flex;
-            gap: 1.5rem;
-            align-items: center;
-            font-weight: 500;
-        }
-
-        .nav-links a {
-            color: var(--text-secondary);
-            text-decoration: none;
-            font-size: 0.95rem;
-            transition: color 0.2s ease;
-        }
-
-        .nav-links a:hover {
             color: var(--text-primary);
         }
 
@@ -298,189 +279,6 @@
             border-radius: 12px;
             overflow: hidden;
             position: relative;
-        }
-
-        /* Use cases */
-        .use-cases {
-            margin-top: -4rem;
-        }
-
-        .use-case-grid {
-            display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            gap: 2rem;
-        }
-
-        .use-case-card {
-            border: 1px solid var(--border);
-            border-radius: 16px;
-            padding: 2rem;
-            background: white;
-            display: flex;
-            flex-direction: column;
-            gap: 1rem;
-            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.04);
-        }
-
-        .use-case-icon {
-            width: 48px;
-            height: 48px;
-            border-radius: 12px;
-            background: rgba(0, 102, 255, 0.08);
-            color: var(--primary);
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-size: 1.5rem;
-        }
-
-        .use-case-card h3 {
-            font-size: 1.5rem;
-        }
-
-        .use-case-card p {
-            color: var(--text-secondary);
-            line-height: 1.6;
-        }
-
-        .use-case-highlights {
-            list-style: none;
-            margin-top: 1rem;
-        }
-
-        .use-case-highlights li {
-            display: flex;
-            align-items: center;
-            gap: 0.75rem;
-            padding: 0.4rem 0;
-            color: var(--text-secondary);
-            font-size: 0.95rem;
-        }
-
-        .use-case-highlights li::before {
-            content: '';
-            width: 8px;
-            height: 8px;
-            border-radius: 50%;
-            background: var(--primary);
-            display: inline-flex;
-        }
-
-        /* Workflow */
-        .workflow-section {
-            background: var(--background-subtle);
-            padding: 8rem 2rem;
-            border-top: 1px solid var(--border);
-            border-bottom: 1px solid var(--border);
-        }
-
-        .workflow-inner {
-            max-width: 1200px;
-            margin: 0 auto;
-        }
-
-        .workflow-steps {
-            display: grid;
-            grid-template-columns: repeat(4, 1fr);
-            gap: 2rem;
-            margin-top: 4rem;
-        }
-
-        .workflow-step {
-            background: white;
-            border-radius: 16px;
-            padding: 2rem;
-            border: 1px solid var(--border);
-            position: relative;
-            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.04);
-        }
-
-        .step-number {
-            width: 48px;
-            height: 48px;
-            border-radius: 50%;
-            background: rgba(0, 102, 255, 0.12);
-            color: var(--primary);
-            font-weight: 700;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-size: 1.2rem;
-            margin-bottom: 1rem;
-        }
-
-        .workflow-step h3 {
-            font-size: 1.3rem;
-            margin-bottom: 0.5rem;
-        }
-
-        .workflow-step p {
-            color: var(--text-secondary);
-            line-height: 1.6;
-        }
-
-        .workflow-step::after {
-            content: '';
-            position: absolute;
-            right: -1rem;
-            top: 50%;
-            width: 2rem;
-            height: 2px;
-            background: var(--border);
-        }
-
-        .workflow-step:last-child::after {
-            display: none;
-        }
-
-        /* Testimonials */
-        .testimonials-section {
-            padding-top: 6rem;
-        }
-
-        .testimonial-grid {
-            display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            gap: 2rem;
-        }
-
-        .testimonial-card {
-            border: 1px solid var(--border);
-            border-radius: 16px;
-            padding: 2.5rem;
-            background: white;
-            display: flex;
-            flex-direction: column;
-            gap: 1.5rem;
-            box-shadow: 0 25px 60px rgba(0, 0, 0, 0.05);
-        }
-
-        .testimonial-quote {
-            font-size: 1.1rem;
-            line-height: 1.8;
-            color: var(--text-primary);
-        }
-
-        .testimonial-author {
-            font-weight: 600;
-            font-size: 1rem;
-        }
-
-        .testimonial-role {
-            color: var(--text-secondary);
-            font-size: 0.9rem;
-        }
-
-        .testimonial-metric {
-            display: inline-flex;
-            align-items: center;
-            gap: 0.5rem;
-            padding: 0.4rem 0.8rem;
-            border-radius: 999px;
-            background: rgba(0, 102, 255, 0.08);
-            color: var(--primary);
-            font-weight: 600;
-            font-size: 0.9rem;
         }
 
         /* Comparison Section */
@@ -782,19 +580,6 @@
                 grid-template-columns: 1fr;
             }
 
-            .use-case-grid,
-            .testimonial-grid {
-                grid-template-columns: repeat(2, 1fr);
-            }
-
-            .workflow-steps {
-                grid-template-columns: repeat(2, 1fr);
-            }
-
-            .workflow-step::after {
-                display: none;
-            }
-
             .stats-container {
                 grid-template-columns: 1fr;
                 gap: 3rem;
@@ -825,33 +610,6 @@
             .feature {
                 gap: 3rem;
                 margin-bottom: 5rem;
-            }
-
-            .nav-content {
-                flex-direction: column;
-            }
-
-            .nav-links {
-                flex-wrap: wrap;
-                justify-content: center;
-                gap: 0.75rem;
-            }
-
-            .cta-group {
-                flex-direction: column;
-            }
-
-            .stats-container,
-            .use-case-grid,
-            .workflow-steps,
-            .testimonial-grid,
-            .pricing-grid,
-            .faq-container {
-                grid-template-columns: 1fr;
-            }
-
-            .workflow-step::after {
-                display: none;
             }
         }
 
@@ -904,14 +662,6 @@
     <nav>
         <div class="nav-content">
             <div class="logo">KnowledgeFlow</div>
-            <div class="nav-links">
-                <a href="#features">機能</a>
-                <a href="#usecases">活用例</a>
-                <a href="#workflow">導入</a>
-                <a href="#pricing">料金</a>
-                <a href="#faq">FAQ</a>
-            </div>
-            <a href="#waitlist" class="nav-cta">Join Waitlist</a>
             <a href="https://forms.gle/wtqQupz7eKTMcdk7A" class="nav-cta" target="_blank" rel="noopener noreferrer">Join Waitlist</a>
         </div>
     </nav>
@@ -1210,127 +960,8 @@
         </div>
     </section>
 
-    <!-- Use Cases Section -->
-    <section class="section use-cases" id="usecases">
-        <div class="section-header">
-            <h2 class="section-title">現場での活用シナリオ</h2>
-            <p class="section-description">
-                チーム規模や役割にあわせて柔軟にワークフローへ組み込めます
-            </p>
-        </div>
-
-        <div class="use-case-grid">
-            <div class="use-case-card">
-                <div class="use-case-icon">👩‍💻</div>
-                <h3>リモートエンジニアリング</h3>
-                <p>離れた拠点でも同じ情報へ瞬時にアクセス。仕様の変更点や議事録が自動で共有されます。</p>
-                <ul class="use-case-highlights">
-                    <li>コードレビューや設計議論を自動で要約</li>
-                    <li>障害の再発防止ノートをチーム全体へ通知</li>
-                    <li>担当者不在時でも過去判断を即参照</li>
-                </ul>
-            </div>
-
-            <div class="use-case-card">
-                <div class="use-case-icon">💼</div>
-                <h3>Biz/CS チーム</h3>
-                <p>顧客との会話をAIが整理。インサイトやFAQが自動生成され、ナレッジが溜まります。</p>
-                <ul class="use-case-highlights">
-                    <li>商談メモを集約し最新の成功事例を共有</li>
-                    <li>問い合わせテンプレートが自動で提案</li>
-                    <li>契約/法務情報もアクセス権限つきで検索</li>
-                </ul>
-            </div>
-
-            <div class="use-case-card">
-                <div class="use-case-icon">🏢</div>
-                <h3>経営・人事</h3>
-                <p>社内の知見マップを可視化。新入社員オンボーディングや方針共有のスピードが向上します。</p>
-                <ul class="use-case-highlights">
-                    <li>部署横断のエキスパートを即座に検索</li>
-                    <li>オンボーディング資料が常に最新版</li>
-                    <li>ナレッジ利用状況をダッシュボード化</li>
-                </ul>
-            </div>
-        </div>
-    </section>
-
-    <!-- Workflow Section -->
-    <section class="workflow-section" id="workflow">
-        <div class="workflow-inner">
-            <div class="section-header">
-                <h2 class="section-title">導入から定着まで</h2>
-                <p class="section-description">
-                    最短1週間で本番運用を開始。AIが自走するまで伴走します。
-                </p>
-            </div>
-
-            <div class="workflow-steps">
-                <div class="workflow-step">
-                    <div class="step-number">1</div>
-                    <h3>ヒアリング</h3>
-                    <p>既存ツールや業務課題を整理し、RAG化するデータ範囲と権限設計を決定します。</p>
-                </div>
-                <div class="workflow-step">
-                    <div class="step-number">2</div>
-                    <h3>接続設定</h3>
-                    <p>Slack/Teams、Notion、ドライブなど主要サービスをコネクト。既存データを安全に取り込みます。</p>
-                </div>
-                <div class="workflow-step">
-                    <div class="step-number">3</div>
-                    <h3>ローンチ</h3>
-                    <p>テンプレートや研修資料を使ってチームへ展開。利用状況をダッシュボードで可視化します。</p>
-                </div>
-                <div class="workflow-step">
-                    <div class="step-number">4</div>
-                    <h3>改善ループ</h3>
-                    <p>夜間Agentが活用状況を学習し、足りない知識を自動収集。運用チームが伴走します。</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Testimonials Section -->
-    <section class="section testimonials-section" id="testimonials">
-        <div class="section-header">
-            <h2 class="section-title">導入企業の声</h2>
-            <p class="section-description">
-                早期導入チームが実感した生産性向上の一部をご紹介します
-            </p>
-        </div>
-
-        <div class="testimonial-grid">
-            <div class="testimonial-card">
-                <div class="testimonial-metric">-45% オンボーディング時間</div>
-                <p class="testimonial-quote">「新メンバーが最初の1週間で質問を自己解決できるようになり、教育コストが劇的に削減されました。」</p>
-                <div>
-                    <div class="testimonial-author">山本 玲奈</div>
-                    <div class="testimonial-role">People Ops / SaaSスタートアップ</div>
-                </div>
-            </div>
-
-            <div class="testimonial-card">
-                <div class="testimonial-metric">92% 即時回答率</div>
-                <p class="testimonial-quote">「顧客からの技術的な質問も個人RAGが一次回答。夜間Agentのレポートで商談準備が1日短縮されました。」</p>
-                <div>
-                    <div class="testimonial-author">佐藤 真</div>
-                    <div class="testimonial-role">Sales Manager / エンタープライズ企業</div>
-                </div>
-            </div>
-
-            <div class="testimonial-card">
-                <div class="testimonial-metric">3倍 ナレッジ活用</div>
-                <p class="testimonial-quote">「部署を跨いだ知見共有が自動化され、プロジェクト間での再発明がなくなりました。」</p>
-                <div>
-                    <div class="testimonial-author">河合 俊</div>
-                    <div class="testimonial-role">CTO / リモートワーク企業</div>
-                </div>
-            </div>
-        </div>
-    </section>
-
     <!-- Comparison Section -->
-    <section class="comparison-section" id="comparison">
+    <section class="comparison-section">
         <div class="comparison-container">
             <div class="section-header">
                 <h2 class="section-title">Before / After</h2>
@@ -1400,7 +1031,7 @@
     </section>
 
     <!-- Pricing Section -->
-    <section class="pricing-section" id="pricing">
+    <section class="pricing-section">
         <div class="section-header">
             <h2 class="section-title">シンプルな料金体系</h2>
             <p class="section-description">
@@ -1463,7 +1094,7 @@
     </section>
 
     <!-- FAQ Section -->
-    <section class="faq-section" id="faq">
+    <section class="faq-section">
         <div class="section-header">
             <h2 class="section-title">よくある質問</h2>
         </div>
